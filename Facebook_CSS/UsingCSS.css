@@ -1,0 +1,266 @@
+/* Style for the entire page body */
+body {
+    font-family: 'Facebook Sans', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for all <h1> elements */
+h1 {
+    font-family: 'Facebook Sans', sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #1877F2;
+}
+
+/* Container class for centralized content layout */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 32px 48px;
+}
+
+/* Button styles for both .button class and all <button> elements */
+.button,
+button {
+    font-family: 'Facebook Sans', sans-serif;
+    background: linear-gradient(90deg, #1877f2 0%, #42a5f5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+    margin: 6px 0;
+}
+
+/* Hover effect for both .button and <button> */
+.button:hover,
+button:hover {
+    background: linear-gradient(90deg, #0f6ae0 0%, #339af0 100%);
+    transform: translateY(-1px);
+}
+
+/* Decorative section headers */
+.section-border {
+    border: 2px solid #1877f2;
+    background: #eaf1fb;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Category labels for menu */
+.menu-category {
+    font-weight: bold;
+    background: #eaf1fb;
+    border-left: 4px solid #1877f2;
+    padding: 6px 12px;
+    margin-top: 12px;
+}
+
+/* General card container */
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Layout for menu section */
+.menu-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Container for option buttons */
+.options-box {
+    flex: 2;
+    min-width: 220px;
+}
+
+/* Buttons inside the .options-box are full-width block elements */
+.options-box .button {
+    display: block;
+    margin: 6px 0;
+}
+
+/* Container for logout button or link */
+.logout-container {
+    margin-top: 20px;
+}
+
+/* Global image spacing */
+img {
+    margin-bottom: 16px;
+}
+
+/* Apply border-box model globally to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Row behaves as flex */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Center text alignment */
+.center-text {
+    text-align: center;
+}
+
+/* Styling for success message headers */
+.success-title {
+    color: #1877F2;
+    margin-bottom: 20px;
+}
+
+/* Styling for error message headers */
+.error-title {
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+/* Message box container */
+.message-box {
+    max-width: 600px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 32px;
+    text-align: center;
+}
+
+/* Grid breakpoints */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .col-s-1 { width: 8.33%; }
+    .col-s-2 { width: 16.66%; }
+    .col-s-3 { width: 25%; }
+    .col-s-4 { width: 33.33%; }
+    .col-s-5 { width: 41.66%; }
+    .col-s-6 { width: 50%; }
+    .col-s-7 { width: 58.33%; }
+    .col-s-8 { width: 66.66%; }
+    .col-s-9 { width: 75%; }
+    .col-s-10 { width: 83.33%; }
+    .col-s-11 { width: 91.66%; }
+    .col-s-12 { width: 100%; }
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+}
+
+/* Layout for user row */
+.user-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    gap: 16px;
+}
+
+/* Responsive profile image */
+.user-image {
+    flex: 0 0 100px;
+}
+
+.profile-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Info container */
+.user-info {
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Action button container */
+.user-action {
+    flex: 0 0 auto;
+}
+
+/* Responsive stacking for mobile */
+@media only screen and (max-width: 767px) {
+    .user-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .user-image,
+    .user-info,
+    .user-action {
+        width: 100%;
+    }
+
+    .profile-pic {
+        max-width: 150px;
+        margin-bottom: 12px;
+    }
+
+    .user-action {
+        margin-top: 12px;
+    }
+
+    .user-info p {
+        margin: 4px 0;
+    }
+}
+
+/* Tablet/Desktop spacing and alignment */
+@media only screen and (min-width: 768px) {
+    .user-row {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+
+    .user-action {
+        margin-left: auto;
+    }
+
+    .user-action form {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

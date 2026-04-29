@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <!-- Set browser tab title -->
+    <title>Mini Facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UsingCSS.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row center-text">
+        <div class="col-12 col-s-8 col-6" style="margin: 0 auto;">
+
+          <!-- Title -->
+          <h1>Facebook</h1>
+
+          <!-- Login Form -->
+          <form id="form_1" action="validationHashing.jsp" method="post">
+            <div style="margin-bottom: 16px;">
+              <label for="userName">Username</label><br>
+              <input type="text" id="userName" name="userName" class="input-field" />
+            </div>
+
+            <div style="margin-bottom: 16px;">
+              <label for="userPass">Password</label><br>
+              <input type="password" id="userPass" name="userPass" class="input-field" />
+            </div>
+
+            <input type="submit" id="Submit" class="button" value="Log in" />
+            <input type="reset" id="Reset" class="button" value="Reset" />
+          </form>
+
+          <br>
+
+          <!-- Create Account -->
+          <form id="form_2" action="newUser.html" method="post">
+            <input type="submit" id="SignUp" class="button" value="Create account" />
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
